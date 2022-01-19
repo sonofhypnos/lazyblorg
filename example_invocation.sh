@@ -16,7 +16,7 @@ mkdir -p testdata/2del/blog
 # 5. modify --orgfiles so that your org-mode files are parsed
 #    don't forget to include your version of «about-placeholder.org» and «blog-format.org»
 
-PYTHONPATH="~/src/lazyblorg:" ./lazyblorg.py \
+PYTHONPATH="~/repos/lazyblorg:" ./lazyblorg.py \
     --targetdir testdata/2del/blog \
     --previous-metadata ./NONEXISTING_-_REPLACE_WITH_YOUR_PREVIOUS_METADATA_FILE.pk \
     --new-metadata ./2del-metadata.pk \

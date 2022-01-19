@@ -18,20 +18,21 @@ import os
 
 
 # strings: Your personal name and the name of your blog:
-AUTHOR_NAME = 'Karl Voit'
-BLOG_NAME = 'public voit'
+AUTHOR_NAME = 'Tassilo Neubauer'
+BLOG_NAME = 'Perfect is the enemy of the sustainable'
 
 ## strings: Define your URLs and your name below:
-DOMAIN = 'Karl-Voit.at'
+DOMAIN = 'sonofhypnos.github.io/thoughs'
 BASE_URL = '//' + DOMAIN
 CSS_URL = BASE_URL + '/public_voit.css'
-BLOG_LOGO = BASE_URL + '/images/public-voit_logo.svg'
-DISQUS_NAME = 'publicvoit'  # gets placed in: '//publicvoit.disqus.com/embed.js'
+BLOG_LOGO = ''
+DISQUS_NAME = ''  # gets placed in: '//publicvoit.disqus.com/embed.js' ??
+# I think Disqus is for comments and I am not sure I want to use it
 
-## string: Email address to send comments to:
-COMMENT_EMAIL_ADDRESS = 'publicvoit-comment@Karl-Voit.at'
+# string: Email address to send comments to:
+COMMENT_EMAIL_ADDRESS = 'tassilo.neubauer@gmail.com'
 
-## integer: Show this many article teasers on entry page
+# integer: Show this many article teasers on entry page
 NUMBER_OF_TEASER_ARTICLES = 25
 
 ## integer: Show this many top tags in the sidebar
@@ -55,7 +56,7 @@ ID_OF_HOWTO_PAGE = '2017-01-03-how-to-use-public-voit'
 
 ## string: Your Twitter handle/username which is used in the HTML header
 ##         metadata (without the @ character)
-TWITTER_HANDLE = 'n0v0id'
+TWITTER_HANDLE = 'tassilo.neubauer'
 
 ## string: An image which is added to the HTML header metadata and is used
 ##         by Twitter in Twitter cards to visualize your blog (also used
@@ -85,7 +86,7 @@ CUSTOMIZED_IMAGE_LINK_KEY = 'tsfile'  # short for "time-stamp filename"
 ## compared to the original file are stored here and copied to the target directory
 ## on blog data generation time.
 ## EMPTY string or non-existing path to a folder if image cache is disabled.
-IMAGE_CACHE_DIRECTORY = os.path.join(os.path.expanduser("~"), *"src/lazyblorg/testdata/imagecache".split('/'))
+IMAGE_CACHE_DIRECTORY = os.path.join(os.path.expanduser("~"), *"repos/lazyblorg/testdata/imagecache".split('/'))
 
 ## string: path to the Memacs index for filenametimestamps
 ## Note that the method below is the safe one that works on Windows
@@ -93,17 +94,12 @@ IMAGE_CACHE_DIRECTORY = os.path.join(os.path.expanduser("~"), *"src/lazyblorg/te
 ## like "/home/user/dir1/memacs_files.org_archive" as string.
 ## EMPTY string if including images via Memacs index is disabled
 ## Please do read the documentation: https://github.com/novoid/lazyblorg/wiki/Orgmode-Elements#images
-MEMACS_FILE_WITH_IMAGE_FILE_INDEX = os.path.join(os.path.expanduser("~"), "org", "memacs", "files.org_archive")
+MEMACS_FILE_WITH_IMAGE_FILE_INDEX = ""
 
 ## string: path to a directory that holds image files (+ sub-directories)
 ## EMPTY string if including images via traversing the file system is disabled
 ## Please do read the documentation: https://github.com/novoid/lazyblorg/wiki/Orgmode-Elements#images
-DIRECTORIES_WITH_IMAGE_ORIGINALS = ["testdata/testimages",
-                                    os.path.join(os.path.expanduser("~"), *"tmp/digicam/tmp".split('/')),
-                                    os.path.join(os.path.expanduser("~"), *"tmp/digicam/oneplus5".split('/')),
-                                    os.path.join(os.path.expanduser("~"), *"archive/events_memories/2021".split('/')),
-                                    os.path.join(os.path.expanduser("~"), *"fun/netfun".split('/')),
-                                    os.path.join(os.path.expanduser("~"), *"archive/fromweb/cliparts".split('/'))]
+DIRECTORIES_WITH_IMAGE_ORIGINALS = [os.path.join(os.path.expanduser("~"), "org-roam")]
 
 ## string: a filetags-tag - see
 ## http://karl-voit.at/managing-digital-photographs/ and
@@ -287,7 +283,7 @@ if len(CUSTOMIZED_IMAGE_LINK_KEY) > 0:
 if len(IMAGE_CACHE_DIRECTORY) > 0 and not os.path.isdir(IMAGE_CACHE_DIRECTORY):
     print('Warning: IMAGE_CACHE_DIRECTORY is set but points to a directory which does not exist. Either empty the string or create its cache directory at "' + IMAGE_CACHE_DIRECTORY + '".')
 
-## END OF FILE #################################################################
+# END OF FILE #################################################################
 # Local Variables:
 # mode: flyspell
 # eval: (ispell-change-dictionary "en_US")

@@ -18,9 +18,9 @@ EOF
     }
 
 ## check for host name and show warning when not my own host:
-[ "x${HOSTNAME}" = "xfloyd" -o "x${HOSTNAME}" = "xsting" ] || warn_and_exit
+#[ "x${HOSTNAME}" = "xfloyd" -o "x${HOSTNAME}" = "xsting" ] || warn_and_exit
 
-cd ~/src/lazyblorg
+cd ~/repos/lazyblorg
 rm -rf testdata/2del/*
 mkdir testdata/2del/blog
 
@@ -54,7 +54,7 @@ mkdir testdata/2del/blog
 ## 	  )
 ## 	)
 
-PYTHONPATH="~/src/lazyblorg:" ./lazyblorg.py \
+PYTHONPATH="~/repos/lazyblorg:" ./lazyblorg.py \
     --quiet \
     --ignore-missing-ids \
     --targetdir testdata/2del/blog \
