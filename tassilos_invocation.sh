@@ -30,6 +30,8 @@ echo "staging and pushing changes to remote..."
 git commit --all -m "Update blog"
 git push origin
 
+#TODO only push and commit if there are substantial changes
+#TODO check for major mishaps
 
 
 
