@@ -27,8 +27,8 @@ rgrep ":blog:" ~/org-roam/* | awk -F ':' '{print $1}' | uniq | paste -d " " | xa
 
 cd "$blogpath" || (echo "$blogpath was not found aborted staging changes"; exit) 
 echo "staging and pushing changes to remote..."
-#git commit --all -m "Update blog"
-#git push origin
+git commit --all -m "Update blog"
+git push origin
 
 #TODO only push and commit if there are substantial changes
 #TODO check for major mishaps
