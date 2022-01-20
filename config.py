@@ -22,7 +22,7 @@ AUTHOR_NAME = 'Tassilo Neubauer'
 BLOG_NAME = 'Perfect is the enemy of the sustainable'
 
 ## strings: Define your URLs and your name below:
-DOMAIN = 'sonofhypnos.github.io/thoughs'
+DOMAIN = 'sonofhypnos.github.io/thoughts'
 BASE_URL = '//' + DOMAIN
 CSS_URL = BASE_URL + '/public_voit.css'
 BLOG_LOGO = ''
