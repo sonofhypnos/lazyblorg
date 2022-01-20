@@ -23,15 +23,16 @@ rgrep ":blog:" ~/org-roam/* | awk -F ':' '{print $1}' | uniq | paste -d " " | xa
     --previous-metadata ~/repos/thoughts/metadata.pk \
     --new-metadata ~/repos/thoughts/metadata.pk \
     --logfile ~/repos/lazyblorg/2del-logfile.org \
-    --orgfiles testdata/end_to_end_test/orgfiles/about-placeholder.org \
+    --orgfiles testdata/end_to_end_test/orgfiles/about-placeholder.org | tee /dev/tty | grep Generated | awk '{print $3}'
 
 cd "$blogpath" || (echo "$blogpath was not found aborted staging changes"; exit) 
 echo "staging and pushing changes to remote..."
-git commit --all -m "Update blog"
-git push origin
+#git commit --all -m "Update blog"
+#git push origin
 
 #TODO only push and commit if there are substantial changes
 #TODO check for major mishaps
+#TODO investigate whether blogposts were removed and ask if this was intentional.
 
 
 
