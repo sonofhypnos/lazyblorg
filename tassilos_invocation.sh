@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 # rm -rf testdata/2del/*
 
 # create the output directory (and parents):
-mkdir -p testdata/2del/blog
 
 
 # get help on the following parameters: «python ./lazyblorg.py --help»
@@ -16,12 +15,23 @@ mkdir -p testdata/2del/blog
 # 5. modify --orgfiles so that your org-mode files are parsed
 #    don't forget to include your version of «about-placeholder.org» and «blog-format.org»
 
-PYTHONPATH="~/repos/lazyblorg:" ./lazyblorg.py \
-    --targetdir ~/repos/staging-thoughts/ \
-    --previous-metadata ~/repos/staging-thoughts/metadata.pk \
-    --new-metadata ~/repos/staging-thoughts/metadata.pk \
+PYTHONPATH="~/repos/lazyblorg:" #not sure whether this has any purpose
+blogpath="$HOME/repos/thoughts/"
+
+rgrep ":blog:" ~/org-roam/* | awk -F ':' '{print $1}' | uniq | paste -d " " | xargs ./lazyblorg.py \
+    --targetdir ~/repos/thoughts/ \
+    --previous-metadata ~/repos/thoughts/metadata.pk \
+    --new-metadata ~/repos/thoughts/metadata.pk \
     --logfile ~/repos/lazyblorg/2del-logfile.org \
     --orgfiles testdata/end_to_end_test/orgfiles/about-placeholder.org \
-               "$@"
+
+cd "$blogpath" || (echo "$blogpath was not found aborted staging changes"; exit) 
+echo "staging and pushing changes to remote..."
+git commit --all -m "Update blog"
+git push origin
+
+
+
+
 
 #END
