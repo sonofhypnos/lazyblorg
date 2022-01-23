@@ -15,10 +15,12 @@
 # 5. modify --orgfiles so that your org-mode files are parsed
 #    don't forget to include your version of «about-placeholder.org» and «blog-format.org»
 
-PYTHONPATH="~/repos/lazyblorg:" #not sure whether this has any purpose
+PYTHONPATH="$HOME/repos/lazyblorg" #not sure whether this has any purpose
 blogpath="$HOME/repos/thoughts/"
+set -e
+cd $PYTHONPATH || (echo "$blogpath was not found aborted running the lazyblorg script"; exit)
 
-rgrep ":blog:" ~/org-roam/* | awk -F ':' '{print $1}' | uniq | paste -d " " | xargs ./lazyblorg.py \
+rgrep ":blog:" ~/org-roam/* | awk -F ':' '{print $1}' | uniq | paste -d " " | tee /dev/tty | xargs "$PYTHONPATH/lazyblorg.py" \
     --targetdir ~/repos/thoughts/ \
     --previous-metadata ~/repos/thoughts/metadata.pk \
     --new-metadata ~/repos/thoughts/metadata.pk \
