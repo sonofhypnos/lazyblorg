@@ -30,7 +30,7 @@ DISQUS_NAME = ''  # gets placed in: '//publicvoit.disqus.com/embed.js' ??
 # I think Disqus is for comments and I am not sure I want to use it
 
 # string: Email address to send comments to:
-COMMENT_EMAIL_ADDRESS = 'tassilo.neubauer@web.de'
+COMMENT_EMAIL_ADDRESS = '.....' #put some email address here I can track down to the blog
 
 # integer: Show this many article teasers on entry page
 NUMBER_OF_TEASER_ARTICLES = 25
