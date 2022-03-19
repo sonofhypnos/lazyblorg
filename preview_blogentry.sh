@@ -1,24 +1,9 @@
  #!/bin/zsh
+ #preview_blogentry.sh
 
-warn_and_exit()
-{
-    cat <<EOF
-
-This script provides a quick preview of the current blog entry in your
-local browser.
-
-You have to adopt this script to your settings (paths, synchronization
-tool) in order to run properly.
-
-Therefore, I stop here until you modified this script to meet your
-requirements.
-
-EOF
-    exit 1
-    }
 
 ## check for host name and show warning when not my own host:
-#[ "x${HOSTNAME}" = "xfloyd" -o "x${HOSTNAME}" = "xsting" ] || warn_and_exit
+##[ "x${HOSTNAME}" = "xfloyd" -o "x${HOSTNAME}" = "xsting" ] || warn_and_exit
 
 cd ~/repos/lazyblorg
 rm -rf testdata/2del/*
@@ -54,16 +39,22 @@ mkdir testdata/2del/blog
 ## 	  )
 ## 	)
 
-PYTHONPATH="~/repos/lazyblorg:" ./lazyblorg.py \
-    --quiet \
+PYTHONPATH="$HOME/repos/lazyblorg"
+
+"$PYTHONPATH/lazyblorg.py" --quiet \
     --ignore-missing-ids \
     --targetdir testdata/2del/blog \
     --previous-metadata NONEXISTING-preview-metadata-REPLACE_WITH_YOUR_PREVIOUS_METADATA_FILE.pk \
     --new-metadata testdata/2del/blog/preview-metadata.pk \
     --logfile testdata/2del/errors.org \
-    --orgfiles testdata/end_to_end_test/orgfiles/about-placeholder.org \
-               templates/blog-format.org \
-               /tmp/lazyblorg-preview.org && \
-find testdata/2del -name '*.html' -exec xdg-open "{}" \;
+    --orgfiles /home/tassilo/org-roam/20210502170155-project_blog_writing.org\
+    /home/tassilo/org-roam/blog-format.org\
+    /home/tassilo/org-roam/lazyblorg_manual.org\
+    /home/tassilo/org-roam/notes.org\
+    /home/tassilo/org-roam/the_pragmatist_s_guide_to_live.org\
+    /home/tassilo/org-roam/20210508185546-things_to_write_about.org\
+    /home/tassilo/org-roam/information_all_the_way_down.org\
+    /tmp/lazyblorg-preview.org && find testdata/2del -name '*.html' -exec xdg-open "{}" \;
+    #I'm not sure what the \; is for, but it makes -exec work don't mess with it future me.
 
 #end
