@@ -64,7 +64,7 @@
 	  <h1 class="common-article-header-title">lazyblorg: Syntax-tests of the Currently Supported Org mode Syntax Elements from the Parser and HTMLizer</h1>
 
   	  <aside class="reading-time-section">
-          Reading time is 9 minutes
+          Reading time is 10 minutes
 	  </aside>
 
 	</header>
@@ -482,7 +482,6 @@ else:
 <p>This is a mixed case LaTeX block without a name. Indented line.</p>
 <p>Another paragraph.</p>
 <p>Mathematical expression: <span class="math inline">$42 * 7 = \frac{c}{45x}$</span></p>
-
 <table>
 <caption>This is the caption<span label="tab:mylatextable"></span></caption>
 <tbody>
@@ -852,10 +851,17 @@ Following example is a really smart one. Above file names were <code>2017-03-11T
 
 </p>
 
-<figure class="image-center">
-<img src="2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20300.jpg" alt="" width="300" />
-<figcaption>Test with image file whose name only matches the ISO timestamp (partial comparison)</figcaption>
-</figure>
+<p>
+
+Unfortunately, I had to disable this on 2021-11-21 because somehow the time-stamp was not unique any more. The file is re-used for many purposes which may cause the index to contain it more than once.
+
+</p>
+
+	  <div class="example_code">
+	  <pre> #+CAPTION: Test with image file whose name only matches the ISO timestamp (partial comparison)
+ #+ATTR_HTML: :align center :width 300
+ [[tsfile:2017-03-11T18.29.21.jpg]]	  </pre>
+    </div>
 
 <p>
 
@@ -890,7 +896,9 @@ And here is an example with <code>float-left</code> attribute:
 This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text. This is an example text.
 
 </p>
-<div class="orgmode-hr" ></div>
+
+	  <header><h3 class="section-title">Linked image versions</h3></header>
+
 <p>
 
 With <a href="https://github.com/novoid/lazyblorg/issues/17">https://github.com/novoid/lazyblorg/issues/17</a> lazyblorg added support for linked images and defining its width.
@@ -925,7 +933,9 @@ Original of <code>2019-07-29T19.57.10 This is my Life -- sign specialL cliparts 
 </p>
 
 <figure class="image-center">
-<a href="2019-07-29T19.57.10%20This%20is%20my%20Life%20--%20sign%20specialL%20cliparts%20publicvoit.jpg"><img src="2019-07-29T19.57.10%20This%20is%20my%20Life%20--%20sign%20specialL%20cliparts%20publicvoit%20-%20scaled%20width%20350.jpg" alt="This is an alternative text." width="350" /></a>
+<a href="2019-07-29T19.57.10%20This%20is%20my%20Life%20--%20sign%20specialL%20cliparts%20publicvoit.jpg">
+  <img src="2019-07-29T19.57.10%20This%20is%20my%20Life%20--%20sign%20specialL%20cliparts%20publicvoit%20-%20scaled%20width%20350.jpg" alt="This is an alternative text." width="350" />
+</a>
 <figcaption>Let's link the full size original image here. Width should be 1000 pixel. <a class="figcaption-clue-link" href="2019-07-29T19.57.10%20This%20is%20my%20Life%20--%20sign%20specialL%20cliparts%20publicvoit.jpg">(click for a larger version)</a></figcaption>
 </figure>
 
@@ -936,9 +946,49 @@ Original of <code>2019-07-26T11.44.35 Shinjuku - Skyline -- specialP publicvoit.
 </p>
 
 <figure class="image-right">
-<a href="2019-07-26T11.44.35%20Shinjuku%20-%20Skyline%20--%20specialP%20publicvoit%20-%20scaled%20width%20750.jpg"><img src="2019-07-26T11.44.35%20Shinjuku%20-%20Skyline%20--%20specialP%20publicvoit%20-%20scaled%20width%20200.jpg" alt="alternative-text for the image" width="200" /></a>
+<a href="2019-07-26T11.44.35%20Shinjuku%20-%20Skyline%20--%20specialP%20publicvoit%20-%20scaled%20width%20750.jpg">
+  <img src="2019-07-26T11.44.35%20Shinjuku%20-%20Skyline%20--%20specialP%20publicvoit%20-%20scaled%20width%20200.jpg" alt="alternative-text for the image" width="200" />
+</a>
 <figcaption>With this image, lazyblorg is going to scale it to 750 pixel width. <a class="figcaption-clue-link" href="2019-07-26T11.44.35%20Shinjuku%20-%20Skyline%20--%20specialP%20publicvoit%20-%20scaled%20width%20750.jpg">(click for a larger version)</a></figcaption>
 </figure>
+
+	  <header><h3 class="section-title">URLs in image descriptions</h3></header>
+
+<p>
+
+Image link descriptions can contain URLs. Those URLs get used as a href link for the whole image.
+
+</p>
+
+	  <div class="example_code">
+	  <pre> [[tsfile:2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit.jpg][https://karl-voit.at]]	  </pre>
+    </div>
+
+<p>
+
+For obvious reasons, this must not be used with <code>:linked-image-width</code> other than <code>none</code>.
+
+</p>
+
+<figure class="image-right">
+<a href="https://karl-voit.at">
+  <img src="2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20300.jpg" alt="An alternative description image" width="300" />
+</a>
+<figcaption>Test image with URL description.</figcaption>
+</figure>
+
+<p>
+
+The following snippet would result in an error if it was not just a comment: "image with URL as description ("https://karl-voit.at"; which will result in a href link) used an linked-image-width parameter value which is not none ("345") which would also result in a href link. Please do remove one of them."
+
+</p>
+
+	  <div class="example_code">
+	  <pre> #+CAPTION: Test image with URL description.
+ #+ATTR_HTML: :alt An alternative description image :title This is my title! :align right :width 300
+ #+ATTR_HTML: :linked-image-width 345
+ [[tsfile:2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit.jpg][https://karl-voit.at]]	  </pre>
+    </div>
 
 
   </article>

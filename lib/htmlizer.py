@@ -1,5 +1,5 @@
 # -*- coding: utf-8; mode: python; -*-
-# Time-stamp: <2021-01-24 18:35:11 vk>
+# Time-stamp: <2022-01-02 19:54:00 vk>
 
 import config  # lazyblorg-global settings
 import sys
@@ -625,13 +625,14 @@ class Htmlizer(object):
         @param return: a string containing all feed-related meta-data
         """
 
+        # NOTE: "config.BASE_URL.lower()" necessary for W3C XML validator to be happy. This might potentially break BASE_URLs that contain upper case characters which are necessary!
         feed = """<?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom"
       xmlns:thr="http://purl.org/syndication/thread/1.0"
       xml:lang="en-us">
   <link rel="self" href=\"""" + config.BASE_URL + """/feeds/lazyblorg-all#LINKPOSTFIX#\" />
   <title type="text">""" + config.BLOG_NAME + """</title>
-  <id>""" + config.BASE_URL + """/</id>
+  <id>https:""" + config.BASE_URL.lower() + """/</id>
   <link href=\"""" + config.BASE_URL + """\" />
   <icon>/favicon.ico</icon>
   <updated>""" + strftime('%Y-%m-%dT%H:%M:%S' + config.TIME_ZONE_ADDON, localtime()) + """</updated>
@@ -709,7 +710,8 @@ class Htmlizer(object):
                         "autotags" + "/" + autotag + "' term='" + tag + "' />"
 
             # write feedentry to links_atom_feed before any summary is added:
-            links_atom_feed += feedentry + "\n    <id>" + config.BASE_URL + "/" + \
+            # NOTE: "config.BASE_URL.lower()" necessary for W3C XML validator to be happy. This might potentially break BASE_URLs that contain upper case characters which are necessary!
+            links_atom_feed += feedentry + "\n    <id>https:" + config.BASE_URL.lower() + "/" + \
                 listentry['url'] + "-from-feed-with-links" + "</id>\n</entry>"
 
             # add article summary to feedentry:
@@ -729,14 +731,15 @@ class Htmlizer(object):
             feedentry += "</div>\n    </summary>"
 
             # add content to content-feed OR end entry for links-feed:
-            teaser_atom_feed += feedentry + "\n    <id>" + config.BASE_URL + "/" + \
+            # NOTE: "config.BASE_URL.lower()" necessary for W3C XML validator to be happy. This might potentially break BASE_URLs that contain upper case characters which are necessary!
+            teaser_atom_feed += feedentry + "\n    <id>https:" + config.BASE_URL.lower() + "/" + \
                 listentry['url'] + "-from-feed-with-teaser" + "</id>\n</entry>"
             content_atom_feed += feedentry + """    <content type='xhtml'>
       <div xmlns='http://www.w3.org/1999/xhtml'>
 	""" + self.sanitize_feed_html_characters('\n'.join(blog_data_entry['content'])) + """
       </div>
     </content>
-    <id>""" + config.BASE_URL + "/" + listentry['url'] + "-from-feed-with-content" + \
+    <id>https:""" + config.BASE_URL.lower() + "/" + listentry['url'] + "-from-feed-with-content" + \
                 "</id>\n</entry>"
 
             # replace "\\example.com" with "http:\\example.com" to calm down feed verifiers/aggregators:
@@ -1413,7 +1416,11 @@ class Htmlizer(object):
                                          '" of entry [[id:' + entry['id'] + ']] does not contain the tag')
 
                 description = entry['content'][index][2]
-                caption = entry['content'][index][3]
+                if description:
+                    description = description.strip()
+                caption = entry['content'][index][3].strip()
+                if caption:
+                    caption = caption.strip()
                 attributes = entry['content'][index][4]
 
                 # start building the result string
@@ -1432,7 +1439,7 @@ class Htmlizer(object):
                 # get scaled image filename
                 result += '>\n'
 
-                add_linked_image_width = False
+                add_anchor_end = False
                 linked_image_filename = ''
                 if 'linked-image-width' in attributes.keys():
                     # opening the href link to the externally linked
@@ -1444,12 +1451,20 @@ class Htmlizer(object):
                         pass  # not linking anything
                     elif value == 'original':
                         linked_image_filename = self.get_scaled_filename(filename, False).replace(' ', '%20')
-                        result += '<a href="' + linked_image_filename + '">'
-                        add_linked_image_width = True
+                        result += '<a href="' + linked_image_filename + '">\n  '
+                        add_anchor_end = True
                     else:
                         linked_image_filename = self.get_scaled_filename(filename, value).replace(' ', '%20')
-                        result += '<a href="' + linked_image_filename + '">'
-                        add_linked_image_width = True
+                        result += '<a href="' + linked_image_filename + '">\n  '
+                        add_anchor_end = True
+
+                # handle "image description is an URL":
+                # FIXXME: move this functionality to the parser in order to warn the user as early as possible!
+                if description and description.lower().startswith('https://'):
+                    # Note: orgparser already checked that there is only one of "description = URL" and "linked-image-width not none".
+                    ## FIXXME: no form validation check for URL in description
+                    result += '<a href="' + description + '">\n  '
+                    add_anchor_end = True
 
                 if 'width' in attributes.keys():
                     result += '<img src="' + self.get_scaled_filename(filename, attributes['width']).replace(' ', '%20') + '" '
@@ -1458,7 +1473,7 @@ class Htmlizer(object):
 
                 # FIXXME: currently, all other attributes are ignored:
                 if 'alt' in list(attributes.keys()):
-                    result += 'alt="' + attributes['alt'] + '" '
+                    result += 'alt="' + attributes['alt'].replace('"', '&quot;') + '" '
                 else:
                     result += 'alt="" '  # alt tag must not be omitted in HTML5 (except when using figcaption, where it is optional)
                 if 'width' in list(attributes.keys()):
@@ -1466,16 +1481,17 @@ class Htmlizer(object):
 
                 result += '/>'
 
-                if add_linked_image_width:
-                    # closing the href link to the externally linked
-                    # image file via 'linked-image-width' attribute
-                    result += '</a>'
+                if add_anchor_end:
+                    # closing the href link which was introduced because of one of:
+                    # 1. to the externally linked image file via 'linked-image-width' attribute
+                    # 2. an URL within the description
+                    result += '\n</a>'
 
                 # determine, if a caption (of a description) is necessary:
                 if description == filename:
                     # If filename equals description, omit it because it does not make sense to me:
                     description = None
-                if description and caption:
+                if description and caption and not description.lower().startswith('https://'):
                     # We've got both: a description and a caption. I'm
                     # deciding to use the description in those cases
                     # and issue a warning:
@@ -1485,7 +1501,7 @@ class Htmlizer(object):
                 elif caption:
                     # a caption always results in a caption of course
                     description = caption
-                if description:
+                if description and not description.lower().startswith('https://'):
                     # generate the figcaption
                     result += '\n<figcaption>' + description
 
@@ -1597,9 +1613,8 @@ class Htmlizer(object):
             return filename
 
     def fix_ampersands_in_url(self, content):
-        """
-        sanitize_html_characters() is really dumb and replaces
-        ampersands in URLs as well. This method finds those broken
+        """The general sanitizing process in lazyblorg is not context-related and thus really dumb. It replaces
+        ampersands multiple times in worst case, resulting in '&amp;amp;' strings. This method finds those broken
         URLs and fixes them.
 
         If this method of fixing something that should be done in a
@@ -1607,19 +1622,18 @@ class Htmlizer(object):
         right. However, this seemed to be the more efficient way
         regarding to implementation. Fix it, if you like :-)
 
-        NOTE: Does not replace several ampersands in the very same
-        URL. However, this use-case of several ampersands in one URL
-        is very rare.
+        NOTE: https://www.urlencoder.io/python/ explains some encoding
+        stuff for URLs in Python and mentions methods I maybe should
+        have used in the first place.
 
         @param entry: string
         @param return: fixed string
+
         """
 
-        result = re.sub(self.FIX_AMPERSAND_URL_REGEX, r'\1&\3', content)
-        if result != content:
-            self.logging.debug(self.current_entry_id_str() +
-                               'fix_ampersands_in_url: fixed \"' + content +
-                               '\" to \"' + result + '\"')
+        result = content
+        while '&amp;amp;' in result:
+            result = result.replace('&amp;amp;', '&amp;')
         return result
 
     def htmlize_simple_text_formatting(self, content):
