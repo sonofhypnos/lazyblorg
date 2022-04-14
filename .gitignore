@@ -28,3 +28,4 @@ testdata/imagecache
 venv/
 run_all_unit_tests.sh
 simple_org_-_lastrun_OLD.pk
+.idea
