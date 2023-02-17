@@ -98,12 +98,14 @@ IMAGE_CACHE_DIRECTORY = os.path.join(
 # like "/home/user/dir1/memacs_files.org_archive" as string.
 # EMPTY string if including images via Memacs index is disabled
 # Please do read the documentation: https://github.com/novoid/lazyblorg/wiki/Orgmode-Elements#images
-MEMACS_FILE_WITH_IMAGE_FILE_INDEX = "/home/tassilo/org-roam/photos.org_archive"
+#MEMACS_FILE_WITH_IMAGE_FILE_INDEX = "/home/tassilo/org-roam/photos.org_archive"
+MEMACS_FILE_WITH_IMAGE_FILE_INDEX = ""
 
 # string: path to a directory that holds image files (+ sub-directories)
 # EMPTY string if including images via traversing the file system is disabled
 # Please do read the documentation: https://github.com/novoid/lazyblorg/wiki/Orgmode-Elements#images
 DIRECTORIES_WITH_IMAGE_ORIGINALS = [os.path.join(os.path.expanduser("~"), "org-roam")]
+
 
 # string: a filetags-tag - see
 # http://karl-voit.at/managing-digital-photographs/ and
