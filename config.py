@@ -18,19 +18,21 @@ import os
 
 
 # strings: Your personal name and the name of your blog:
-AUTHOR_NAME = 'Tassilo Neubauer'
-BLOG_NAME = 'Perfect is the enemy of the sustainable'
+AUTHOR_NAME = "Tassilo Neubauer"
+BLOG_NAME = "Perfect is the enemy of the sustainable"
 
 # strings: Define your URLs and your name below:
-DOMAIN = 'sonofhypnos.github.io/thoughts'
-BASE_URL = '//' + DOMAIN
-CSS_URL = BASE_URL + '/public_voit.css'
-BLOG_LOGO = ''
-DISQUS_NAME = ''  # gets placed in: '//publicvoit.disqus.com/embed.js' ??
+DOMAIN = "sonofhypnos.github.io/thoughts"
+BASE_URL = "//" + DOMAIN
+CSS_URL = BASE_URL + "/public_voit.css"
+BLOG_LOGO = ""
+DISQUS_NAME = ""  # gets placed in: '//publicvoit.disqus.com/embed.js' ??
 # I think Disqus is for comments and I am not sure I want to use it
 
 # string: Email address to send comments to:
-COMMENT_EMAIL_ADDRESS = '.....' #put some email address here I can track down to the blog
+COMMENT_EMAIL_ADDRESS = (
+    "....."  # put some email address here I can track down to the blog
+)
 
 # integer: Show this many article teasers on entry page
 NUMBER_OF_TEASER_ARTICLES = 25
@@ -39,8 +41,8 @@ NUMBER_OF_TEASER_ARTICLES = 25
 NUMBER_OF_TOP_TAGS = 10
 
 # list of strings: tags to ignore when generating misc things:
-IGNORE_FOR_TOP_TAGS = ['suderei', 'personally']
-IGNORE_FOR_TAG_CLOUD = ['suderei', 'personally', 'hardware', 'software']
+IGNORE_FOR_TOP_TAGS = ["suderei", "personally"]
+IGNORE_FOR_TAG_CLOUD = ["suderei", "personally", "hardware", "software"]
 
 # integer: Show this many article in Atom feeds:
 NUMBER_OF_FEED_ARTICLES = 25
@@ -48,24 +50,24 @@ NUMBER_OF_FEED_ARTICLES = 25
 # string: This is the Org-mode property :ID: of your blog article which
 #         is used for the about page of your blog.
 # See example in: testdata/end_to_end_test/orgfiles/about-placeholder.org
-ID_OF_ABOUT_PAGE = '2014-03-09-about'
+ID_OF_ABOUT_PAGE = "2014-03-09-about"
 
 # string: This is the Org-mode property :ID: of your blog article which
 #         is used for the "How to use this blog efficiently" page of your blog.
-ID_OF_HOWTO_PAGE = '2017-01-03-how-to-use-public-voit'
+ID_OF_HOWTO_PAGE = "2017-01-03-how-to-use-public-voit"
 
 # string: Your Twitter handle/username which is used in the HTML header
 #         metadata (without the @ character)
-TWITTER_HANDLE = 'tassilo.neubauer'
+TWITTER_HANDLE = "tassilo.neubauer"
 
 # string: An image which is added to the HTML header metadata and is used
 #         by Twitter in Twitter cards to visualize your blog (also used
 #         as og:image)
-TWITTER_IMAGE = 'http://Karl-Voit.at/images/public-voit_T_logo_200x200.png'
+TWITTER_IMAGE = "http://Karl-Voit.at/images/public-voit_T_logo_200x200.png"
 
 # string: Replace "+01:00" below with your time-zone indicator
 # This string gets added to the time strings in order to describe time zone of the blog:
-TIME_ZONE_ADDON = '+01:00'
+TIME_ZONE_ADDON = "+01:00"
 
 # string: Customized link key for linking image files within an article
 # See https://www.gnu.org/software/emacs/manual/html_node/org/Link-abbreviations.html
@@ -78,7 +80,7 @@ TIME_ZONE_ADDON = '+01:00'
 #   or one of its sub-folders.
 # EMPTY string if including images is disabled
 # Please do read the documentation: https://github.com/novoid/lazyblorg/wiki/Orgmode-Elements#images
-CUSTOMIZED_IMAGE_LINK_KEY = 'tsfile'  # short for "time-stamp filename"
+CUSTOMIZED_IMAGE_LINK_KEY = "tsfile"  # short for "time-stamp filename"
 
 # string: (optional) path to an existing folder which is used to copy images that
 # were resized too meet the width stated by the user (ATTR). To speed up blog data
@@ -86,7 +88,9 @@ CUSTOMIZED_IMAGE_LINK_KEY = 'tsfile'  # short for "time-stamp filename"
 # compared to the original file are stored here and copied to the target directory
 # on blog data generation time.
 # EMPTY string or non-existing path to a folder if image cache is disabled.
-IMAGE_CACHE_DIRECTORY = os.path.join(os.path.expanduser("~"), *"repos/lazyblorg/testdata/imagecache".split('/'))
+IMAGE_CACHE_DIRECTORY = os.path.join(
+    os.path.expanduser("~"), *"repos/lazyblorg/testdata/imagecache".split("/")
+)
 
 # string: path to the Memacs index for filenametimestamps
 # Note that the method below is the safe one that works on Windows
@@ -108,7 +112,7 @@ DIRECTORIES_WITH_IMAGE_ORIGINALS = [os.path.join(os.path.expanduser("~"), "org-r
 # If not empty: Contains a tag which should be part of any image
 # file included. If the image file does not contain this filetag,
 # a warning is issued in the console output.
-WARN_IF_IMAGE_FILE_NOT_TAGGED_WITH="publicvoit"
+WARN_IF_IMAGE_FILE_NOT_TAGGED_WITH = ""
 
 # According to https://github.com/novoid/lazyblorg/wiki/Images
 # you can link to a differently sized image when including a
@@ -122,8 +126,10 @@ WARN_IF_IMAGE_FILE_NOT_TAGGED_WITH="publicvoit"
 # another language, you need to make sure the auto-tag mechanism
 # within Utils is extended as well and the language identifier
 # matches the dict keys below.
-CLUE_TEXT_FOR_LINKED_IMAGES = {'deutsch': '(klicken für größere Version)',
-                               'english': '(click for a larger version)'}
+CLUE_TEXT_FOR_LINKED_IMAGES = {
+    "deutsch": "(klicken für größere Version)",
+    "english": "(click for a larger version)",
+}
 
 # ===================================================================== #
 #                                                                       #
@@ -138,94 +144,96 @@ CLUE_TEXT_FOR_LINKED_IMAGES = {'deutsch': '(klicken für größere Version)',
 # the assert-statements are doing basic sanity checks on the configured variables
 # please do NOT change them unless you are ABSOLUTELY sure what this means for the rest of lazyblorg!
 
-assert(type(BASE_URL) == str)
-assert(BASE_URL.startswith('//'))
-assert(type(AUTHOR_NAME) == str)
+assert type(BASE_URL) == str
+assert BASE_URL.startswith("//")
+assert type(AUTHOR_NAME) == str
 
-assert(type(NUMBER_OF_TEASER_ARTICLES) == int)
-assert(NUMBER_OF_TEASER_ARTICLES > -1)
+assert type(NUMBER_OF_TEASER_ARTICLES) == int
+assert NUMBER_OF_TEASER_ARTICLES > -1
 
-assert(type(NUMBER_OF_FEED_ARTICLES) == int)
-assert(NUMBER_OF_FEED_ARTICLES > -1)
+assert type(NUMBER_OF_FEED_ARTICLES) == int
+assert NUMBER_OF_FEED_ARTICLES > -1
 
 import re
-assert(re.match(r'(\+|-)[01][0123456789]:[012345][0123456789]', TIME_ZONE_ADDON))
+
+assert re.match(r"(\+|-)[01][0123456789]:[012345][0123456789]", TIME_ZONE_ADDON)
+
 
 def assertTag(tag):
     """
     checks formal criteria of an Org-mode tag
     """
-    assert(type(tag) == str)
-    assert(' ' not in tag)
-    assert(':' not in tag)
-    assert('-' not in tag)
+    assert type(tag) == str
+    assert " " not in tag
+    assert ":" not in tag
+    assert "-" not in tag
 
 
 # string of the state which defines a blog entry to be published; states are not shown in result page
-BLOG_FINISHED_STATE = 'DONE'
+BLOG_FINISHED_STATE = "DONE"
 
 assertTag(BLOG_FINISHED_STATE)
 
 
 # tag that is expected in any blog entry category; tag does not get shown in list of user-tags
-TAG_FOR_BLOG_ENTRY = 'blog'
+TAG_FOR_BLOG_ENTRY = "blog"
 
 assertTag(TAG_FOR_BLOG_ENTRY)
 
 
 # if an entry is tagged with this, it's an TAGS entry; tag does not get shown in list of user-tags
-TAG_FOR_TAG_ENTRY = 'lb_tags'
+TAG_FOR_TAG_ENTRY = "lb_tags"
 
 assertTag(TAG_FOR_TAG_ENTRY)
 
 
 # if an entry is tagged with this, it's an PERSISTENT entry; tag does not get shown in list of user-tags
-TAG_FOR_PERSISTENT_ENTRY = 'lb_persistent'
+TAG_FOR_PERSISTENT_ENTRY = "lb_persistent"
 
 assertTag(TAG_FOR_PERSISTENT_ENTRY)
 
 
 # if an entry is tagged with this, it's an TEMPLATES entry; tag does not get shown in list of user-tags
-TAG_FOR_TEMPLATES_ENTRY = 'lb_templates'
+TAG_FOR_TEMPLATES_ENTRY = "lb_templates"
 
 assertTag(TAG_FOR_TEMPLATES_ENTRY)
 
 
 # if an entry is tagged with this, it will be omitted in feeds, the main page, and navigation pages; tag is shown in result page
-TAG_FOR_HIDDEN = 'hidden'
+TAG_FOR_HIDDEN = "hidden"
 
 assertTag(TAG_FOR_HIDDEN)
 
 
 # INTERNAL category names of blog entries:
-TAGS = 'TAGS'
-PERSISTENT = 'PERSISTENT'
-TEMPORAL = 'TEMPORAL'
-TEMPLATES = 'TEMPLATES'
-ENTRYPAGE = 'ENTRYPAGE'
-TAGOVERVIEWPAGE = 'TAGOVERVIEWPAGE'
+TAGS = "TAGS"
+PERSISTENT = "PERSISTENT"
+TEMPORAL = "TEMPORAL"
+TEMPLATES = "TEMPLATES"
+ENTRYPAGE = "ENTRYPAGE"
+TAGOVERVIEWPAGE = "TAGOVERVIEWPAGE"
 
-assert(type(TAGS) == str)
-assert(type(PERSISTENT) == str)
-assert(type(TEMPORAL) == str)
-assert(type(TEMPLATES) == str)
-assert(type(ENTRYPAGE) == str)
-assert(type(TAGOVERVIEWPAGE) == str)
+assert type(TAGS) == str
+assert type(PERSISTENT) == str
+assert type(TEMPORAL) == str
+assert type(TEMPLATES) == str
+assert type(ENTRYPAGE) == str
+assert type(TAGOVERVIEWPAGE) == str
 
 
 # base directory of the RSS/ATOM feeds:
-FEEDDIR = 'feeds'
+FEEDDIR = "feeds"
 
-assert(type(FEEDDIR) == str)
+assert type(FEEDDIR) == str
 
 
 # 2018-09-23 Deprecated with migration to Python 3: PICKLE_FORMAT
 
 
 # checking image inclusion variables:
-assert(type(CUSTOMIZED_IMAGE_LINK_KEY) == str)
-assert(type(MEMACS_FILE_WITH_IMAGE_FILE_INDEX) == str)
-assert(type(DIRECTORIES_WITH_IMAGE_ORIGINALS) == list)
+assert type(CUSTOMIZED_IMAGE_LINK_KEY) == str
+assert type(MEMACS_FILE_WITH_IMAGE_FILE_INDEX) == str
+assert type(DIRECTORIES_WITH_IMAGE_ORIGINALS) == list
 
 # If DIRECTORIES_WITH_IMAGE_ORIGINALS is a relative path, derive the absolute path:
 index = 0
@@ -237,7 +245,13 @@ for currentdir in DIRECTORIES_WITH_IMAGE_ORIGINALS:
     if os.path.isdir(DIRECTORIES_WITH_IMAGE_ORIGINALS[index]):
         dir_set_and_found = True
     else:
-        print('Warning: DIRECTORIES_WITH_IMAGE_ORIGINALS[' + str(index) + '] which is set to \"' + str(currentdir) + '\" is not an existing directory. It will be ignored.')
+        print(
+            "Warning: DIRECTORIES_WITH_IMAGE_ORIGINALS["
+            + str(index)
+            + '] which is set to "'
+            + str(currentdir)
+            + '" is not an existing directory. It will be ignored.'
+        )
     index += 1
 
 # define the three possibilities to include image files:
@@ -249,15 +263,25 @@ IMAGE_INCLUDE_METHOD_DIR = 3
 # check for the correct image include settings:
 if len(CUSTOMIZED_IMAGE_LINK_KEY) > 0:
     file_not_set = len(MEMACS_FILE_WITH_IMAGE_FILE_INDEX) < 1
-    file_set_and_found = len(MEMACS_FILE_WITH_IMAGE_FILE_INDEX) > 1 and os.path.isfile(MEMACS_FILE_WITH_IMAGE_FILE_INDEX)
-    file_set_and_not_found = len(MEMACS_FILE_WITH_IMAGE_FILE_INDEX) > 1 and not os.path.isfile(MEMACS_FILE_WITH_IMAGE_FILE_INDEX)
+    file_set_and_found = len(MEMACS_FILE_WITH_IMAGE_FILE_INDEX) > 1 and os.path.isfile(
+        MEMACS_FILE_WITH_IMAGE_FILE_INDEX
+    )
+    file_set_and_not_found = len(
+        MEMACS_FILE_WITH_IMAGE_FILE_INDEX
+    ) > 1 and not os.path.isfile(MEMACS_FILE_WITH_IMAGE_FILE_INDEX)
     dir_not_set = len(DIRECTORIES_WITH_IMAGE_ORIGINALS) < 1
-    dir_set_and_not_found = len(DIRECTORIES_WITH_IMAGE_ORIGINALS) > 1 and not dir_set_and_found
+    dir_set_and_not_found = (
+        len(DIRECTORIES_WITH_IMAGE_ORIGINALS) > 1 and not dir_set_and_found
+    )
 
     if file_set_and_not_found:
-        print("Warning: MEMACS_FILE_WITH_IMAGE_FILE_INDEX is not empty but contains no existing file. Please fill it with an existing filename containing a Memacs file index or set either MEMACS_FILE_WITH_IMAGE_FILE_INDEX or CUSTOMIZED_IMAGE_LINK_KEY to an empty string.")
+        print(
+            "Warning: MEMACS_FILE_WITH_IMAGE_FILE_INDEX is not empty but contains no existing file. Please fill it with an existing filename containing a Memacs file index or set either MEMACS_FILE_WITH_IMAGE_FILE_INDEX or CUSTOMIZED_IMAGE_LINK_KEY to an empty string."
+        )
     if dir_set_and_not_found:
-        print("Warning: DIRECTORIES_WITH_IMAGE_ORIGINALS is not empty but contains no path to an existing directory. Please fill it with an existing path to a directory or set either DIRECTORIES_WITH_IMAGE_ORIGINALS or CUSTOMIZED_IMAGE_LINK_KEY to an empty string.")
+        print(
+            "Warning: DIRECTORIES_WITH_IMAGE_ORIGINALS is not empty but contains no path to an existing directory. Please fill it with an existing path to a directory or set either DIRECTORIES_WITH_IMAGE_ORIGINALS or CUSTOMIZED_IMAGE_LINK_KEY to an empty string."
+        )
 
     # three to the power of two: nine possibilities
     if file_set_and_found:
@@ -269,19 +293,29 @@ if len(CUSTOMIZED_IMAGE_LINK_KEY) > 0:
         if dir_set_and_found:
             IMAGE_INCLUDE_METHOD = IMAGE_INCLUDE_METHOD_DIR
         elif dir_not_set or dir_set_and_not_found:
-            print("Error: if CUSTOMIZED_IMAGE_LINK_KEY is set, at least one of MEMACS_FILE_WITH_IMAGE_FILE_INDEX or DIRECTORIES_WITH_IMAGE_ORIGINALS has to be filled and point to an existing file/directory.")
+            print(
+                "Error: if CUSTOMIZED_IMAGE_LINK_KEY is set, at least one of MEMACS_FILE_WITH_IMAGE_FILE_INDEX or DIRECTORIES_WITH_IMAGE_ORIGINALS has to be filled and point to an existing file/directory."
+            )
             import sys
+
             sys.exit(10)
     elif file_set_and_not_found:
         if dir_set_and_found:
             IMAGE_INCLUDE_METHOD = IMAGE_INCLUDE_METHOD_DIR
         elif dir_not_set or dir_set_and_not_found:
-            print("Error: if CUSTOMIZED_IMAGE_LINK_KEY is set, at least one of MEMACS_FILE_WITH_IMAGE_FILE_INDEX or DIRECTORIES_WITH_IMAGE_ORIGINALS has to be filled and point to an existing file/directory.")
+            print(
+                "Error: if CUSTOMIZED_IMAGE_LINK_KEY is set, at least one of MEMACS_FILE_WITH_IMAGE_FILE_INDEX or DIRECTORIES_WITH_IMAGE_ORIGINALS has to be filled and point to an existing file/directory."
+            )
             import sys
+
             sys.exit(11)
 
 if len(IMAGE_CACHE_DIRECTORY) > 0 and not os.path.isdir(IMAGE_CACHE_DIRECTORY):
-    print('Warning: IMAGE_CACHE_DIRECTORY is set but points to a directory which does not exist. Either empty the string or create its cache directory at "' + IMAGE_CACHE_DIRECTORY + '".')
+    print(
+        'Warning: IMAGE_CACHE_DIRECTORY is set but points to a directory which does not exist. Either empty the string or create its cache directory at "'
+        + IMAGE_CACHE_DIRECTORY
+        + '".'
+    )
 
 # END OF FILE #################################
 # Local Variables:
