@@ -63,7 +63,7 @@ TWITTER_HANDLE = "tassilo.neubauer"
 # string: An image which is added to the HTML header metadata and is used
 #         by Twitter in Twitter cards to visualize your blog (also used
 #         as og:image)
-TWITTER_IMAGE = "http://Karl-Voit.at/images/public-voit_T_logo_200x200.png"
+TWITTER_IMAGE = ""
 
 # string: Replace "+01:00" below with your time-zone indicator
 # This string gets added to the time strings in order to describe time zone of the blog:
