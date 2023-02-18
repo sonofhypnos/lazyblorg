@@ -363,7 +363,7 @@ With name/label:
 
       <nav class="entrypage-article-header-nav">
         <span class="breadcrumbs">
-          <img src="#BLOG-LOGO#" alt="#BLOG-NAME# logo" width="350" style="vertical-align:middle;"><span style="padding-top:1em;">
+          <img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"><span style="padding-top:1em;">
         </span>
       </nav>
 
@@ -582,7 +582,7 @@ The second version here is when you are using the =MASTODON_USER_URL= variable i
 
 	  <nav class="persistent-article-header-nav">
 	    <span class="breadcrumbs">
-	      <a href="../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME# logo" width="350" style="vertical-align:middle;"></a>
+	      <a href="../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"></a>
 	    </span>
 	  </nav>
 
@@ -783,7 +783,7 @@ The second version here is when you are using the =MASTODON_USER_URL= variable i
 
 	  <nav class="temporal-article-header-nav">
 	    <span class="breadcrumbs">
-	      <a href="../../../../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME# logo" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;
+	      <a href="../../../../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;
 	      <a href="../../../">#ARTICLE-YEAR#</a>&nbsp;&ndash;&nbsp;<a href="../../">#ARTICLE-MONTH#</a>&nbsp;&ndash;&nbsp;<a href="../">#ARTICLE-DAY#</a></span>
 	    </span>
 	  </nav>
@@ -1010,7 +1010,7 @@ A single page which is used as template for =example.com/tags/index.html=.
 
 	  <nav class="temporal-article-header-nav">
 	    <span class="breadcrumbs">
-	      <a href="../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME# logo" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;Tags</span>
+	      <a href="../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;Tags</span>
 	    </span>
 	  </nav>
 
@@ -1142,7 +1142,7 @@ Pages that describe a tag. Corresponding Org-mode entries must have:
 
 	  <nav class="temporal-article-header-nav">
 	    <span class="breadcrumbs">
-	      <a href="../../../../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME# logo" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;<a href="../">Tags</a>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;#ARTICLE-TITLE#</span>
+	      <a href="../../../../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;<a href="../">Tags</a>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;#ARTICLE-TITLE#</span>
 	    </span>
 	  </nav>
 
@@ -1258,7 +1258,7 @@ FIXXME
 
 	  <nav class="month-overview-header-nav">
 	    <span class="breadcrumbs">
-	      <a href="../../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME# logo" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;
+	      <a href="../../"><img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"></a><span style="padding-top:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&raquo;
 	      #YEAR#&nbsp;&ndash;&nbsp;#MONTH-TWODIGITNUMBER#</span>
 	    </span>
 	  </nav>
