@@ -19,7 +19,7 @@ import os
 
 # strings: Your personal name and the name of your blog:
 AUTHOR_NAME = "Tassilo Neubauer"
-BLOG_NAME = "Perfect is the enemy of the sustainable"
+BLOG_NAME = "Perfect is the enemy of sustainable"
 
 # strings: Define your URLs and your name below:
 DOMAIN = "sonofhypnos.github.io/thoughts"
