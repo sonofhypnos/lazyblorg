@@ -1,4 +1,4 @@
-#!/bin/zsh
+ #!/bin/zsh
  #preview_blogentry.sh
 
 
@@ -47,9 +47,9 @@ PYTHONPATH="$HOME/repos/lazyblorg"
     --previous-metadata NONEXISTING-preview-metadata-REPLACE_WITH_YOUR_PREVIOUS_METADATA_FILE.pk \
     --new-metadata testdata/2del/blog/preview-metadata.pk \
     --logfile testdata/2del/errors.org \
-    --orgfiles testdata/end_to_end_test/orgfiles/about-placeholder.org \
-               templates/blog-format.org \
-               /tmp/lazyblorg-preview.org \
+    --orgfiles /home/tassilo/org-roam/org-roam/20210502170155-project_blog_writing.org\
+    /home/tassilo/org-roam/org-roam/blog-format.org\
+    /home/tassilo/org-roam/org-roam/20210508185546-things_to_write_about.org\
     && find testdata/2del -name '*.html' -exec xdg-open "{}" \;
     #I'm not sure what the \; is for, but it makes -exec work don't mess with it future me.
 
