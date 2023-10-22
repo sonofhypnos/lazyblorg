@@ -28,6 +28,7 @@ CSS_URL = BASE_URL + "/public_voit.css"
 BLOG_LOGO = ""
 DISQUS_NAME = ""  # gets placed in: '//publicvoit.disqus.com/embed.js' ??
 # I think Disqus is for comments and I am not sure I want to use it
+MASTODON_USER_URL=None
 
 # string: Email address to send comments to:
 COMMENT_EMAIL_ADDRESS = (
