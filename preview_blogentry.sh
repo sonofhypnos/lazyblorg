@@ -47,14 +47,10 @@ PYTHONPATH="$HOME/repos/lazyblorg"
     --previous-metadata NONEXISTING-preview-metadata-REPLACE_WITH_YOUR_PREVIOUS_METADATA_FILE.pk \
     --new-metadata testdata/2del/blog/preview-metadata.pk \
     --logfile testdata/2del/errors.org \
-    --orgfiles /home/tassilo/org-roam/20210502170155-project_blog_writing.org\
-    /home/tassilo/org-roam/blog-format.org\
-    /home/tassilo/org-roam/lazyblorg_manual.org\
-    /home/tassilo/org-roam/notes.org\
-    /home/tassilo/org-roam/the_pragmatist_s_guide_to_live.org\
-    /home/tassilo/org-roam/20210508185546-things_to_write_about.org\
-    /home/tassilo/org-roam/information_all_the_way_down.org\
-    /tmp/lazyblorg-preview.org && find testdata/2del -name '*.html' -exec xdg-open "{}" \;
+    --orgfiles /home/tassilo/org-roam/org-roam/20210502170155-project_blog_writing.org\
+    /home/tassilo/org-roam/org-roam/blog-format.org\
+    /home/tassilo/org-roam/org-roam/20210508185546-things_to_write_about.org\
+    && find testdata/2del -name '*.html' -exec xdg-open "{}" \;
     #I'm not sure what the \; is for, but it makes -exec work don't mess with it future me.
 
 #end
