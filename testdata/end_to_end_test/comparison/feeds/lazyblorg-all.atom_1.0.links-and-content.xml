@@ -2,25 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom"
       xmlns:thr="http://purl.org/syndication/thread/1.0"
       xml:lang="en-us">
-  <link rel="self" href="http://Karl-Voit.at/feeds/lazyblorg-all.atom_1.0.links-and-content.xml" />
-  <title type="text">public voit</title>
-  <id>https://karl-voit.at/</id>
-  <link href="http://Karl-Voit.at" />
+  <link rel="self" href="http://sonofhypnos.github.io/thoughts/feeds/lazyblorg-all.atom_1.0.links-and-content.xml" />
+  <title type="text">Perfect is the enemy of sustainable</title>
+  <id>https://sonofhypnos.github.io/thoughts/</id>
+  <link href="http://sonofhypnos.github.io/thoughts" />
   <icon>/favicon.ico</icon>
-  <updated>2023-02-17T23:45:50+01:00</updated>
+  <updated>2023-10-22T19:59:28+01:00</updated>
   <author>
-    <name>Karl Voit</name>
+    <name>Tassilo Neubauer</name>
   </author>
-  <subtitle type="text">public voit</subtitle>
-  <rights>All content written by Karl Voit</rights>
+  <subtitle type="text">Perfect is the enemy of sustainable</subtitle>
+  <rights>All content written by Tassilo Neubauer</rights>
   <generator uri='https://github.com/novoid/lazyblorg'>Generated from Org-mode source code using lazyblorg which is written in Python. Industrial-strength technology, baby.</generator>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Test case with drawers</title>
-    <link href='http://Karl-Voit.at/2021/01/30/drawer-tests' />
+    <link href='http://sonofhypnos.github.io/thoughts/2021/01/30/drawer-tests' />
     <published>2021-01-30T23:32:00+01:00</published>
     <updated>2021-01-30T23:32:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'></div>
     </summary>    <content type='xhtml'>
@@ -47,15 +47,15 @@ Another dummy text.
 
       </div>
     </content>
-    <id>https://karl-voit.at/2021/01/30/drawer-tests-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2021/01/30/drawer-tests-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Heading which starts with a list</title>
-    <link href='http://Karl-Voit.at/2020/10/02/Heading-which-starts-with-a-list' />
+    <link href='http://sonofhypnos.github.io/thoughts/2020/10/02/Heading-which-starts-with-a-list' />
     <published>2020-10-02T19:03:00+01:00</published>
     <updated>2020-10-02T19:03:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'><ul>
 <li>this is a list with some text
@@ -75,19 +75,19 @@ Another dummy text.
 
       </div>
     </content>
-    <id>https://karl-voit.at/2020/10/02/Heading-which-starts-with-a-list-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2020/10/02/Heading-which-starts-with-a-list-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Links test and reading time over one minute</title>
-    <link href='http://Karl-Voit.at/2017/09/30/link-test' />
+    <link href='http://sonofhypnos.github.io/thoughts/2017/09/30/link-test' />
     <published>2017-09-30T17:05:00+01:00</published>
     <updated>2017-09-30T17:05:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/lazyblorg' term='lazyblorg' />
-    <category scheme='http://Karl-Voit.at/tags/programming' term='programming' />
-    <category scheme='http://Karl-Voit.at/tags/exampletag' term='exampletag' />
-    <category scheme='http://Karl-Voit.at/tags/mytest' term='mytest' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/lazyblorg' term='lazyblorg' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/programming' term='programming' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/exampletag' term='exampletag' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/mytest' term='mytest' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -97,21 +97,21 @@ This is a test article which tests its links to other (internal) blog entries.
 </p>
 
 <ul>
-<li>This should work <a href="//Karl-Voit.at/persistent-entry">in lists</a> as <a href="//Karl-Voit.at/2016/11/27/special-characters">well</a>.</li>
-<li>This should work <a href="//Karl-Voit.at/persistent-entry">2016-10-31-persistent-entry</a> and <a href="//Karl-Voit.at/2016/11/27/special-characters">2016-11-27-special-characters</a>.</li>
+<li>This should work <a href="//sonofhypnos.github.io/thoughts/persistent-entry">in lists</a> as <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">well</a>.</li>
+<li>This should work <a href="//sonofhypnos.github.io/thoughts/persistent-entry">2016-10-31-persistent-entry</a> and <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">2016-11-27-special-characters</a>.</li>
 </ul>
 
 <table>
 <tbody>
 <tr class="odd">
 <td>also in</td>
-<td>a <a href="//Karl-Voit.at/2016/11/27/special-characters">table</a></td>
-<td>with <a href="//Karl-Voit.at/2016/11/27/special-characters">multiple cells containing links</a></td>
+<td>a <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">table</a></td>
+<td>with <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">multiple cells containing links</a></td>
 </tr>
 <tr class="even">
 <td>also</td>
-<td><a href="//Karl-Voit.at/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
-<td>and <a href="//Karl-Voit.at/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
+<td><a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
+<td>and <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
 </tr>
 </tbody>
 </table>
@@ -122,7 +122,7 @@ This is a test article which tests its links to other (internal) blog entries.
 
 <p>
 
-Here is <a href="//Karl-Voit.at/2017/09/30/link-test">a self-reference</a> which should not result in a backlink to itself.
+Here is <a href="//sonofhypnos.github.io/thoughts/2017/09/30/link-test">a self-reference</a> which should not result in a backlink to itself.
 
 </p>
 </div>
@@ -136,21 +136,21 @@ This is a test article which tests its links to other (internal) blog entries.
 </p>
 
 <ul>
-<li>This should work <a href="//Karl-Voit.at/persistent-entry">in lists</a> as <a href="//Karl-Voit.at/2016/11/27/special-characters">well</a>.</li>
-<li>This should work <a href="//Karl-Voit.at/persistent-entry">2016-10-31-persistent-entry</a> and <a href="//Karl-Voit.at/2016/11/27/special-characters">2016-11-27-special-characters</a>.</li>
+<li>This should work <a href="//sonofhypnos.github.io/thoughts/persistent-entry">in lists</a> as <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">well</a>.</li>
+<li>This should work <a href="//sonofhypnos.github.io/thoughts/persistent-entry">2016-10-31-persistent-entry</a> and <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">2016-11-27-special-characters</a>.</li>
 </ul>
 
 <table>
 <tbody>
 <tr class="odd">
 <td>also in</td>
-<td>a <a href="//Karl-Voit.at/2016/11/27/special-characters">table</a></td>
-<td>with <a href="//Karl-Voit.at/2016/11/27/special-characters">multiple cells containing links</a></td>
+<td>a <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">table</a></td>
+<td>with <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">multiple cells containing links</a></td>
 </tr>
 <tr class="even">
 <td>also</td>
-<td><a href="//Karl-Voit.at/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
-<td>and <a href="//Karl-Voit.at/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
+<td><a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
+<td>and <a href="//sonofhypnos.github.io/thoughts/2016/11/27/special-characters">2016-11-27-special-characters</a></td>
 </tr>
 </tbody>
 </table>
@@ -161,17 +161,17 @@ This is a test article which tests its links to other (internal) blog entries.
 
 <p>
 
-Here is <a href="//Karl-Voit.at/2017/09/30/link-test">a self-reference</a> which should not result in a backlink to itself.
+Here is <a href="//sonofhypnos.github.io/thoughts/2017/09/30/link-test">a self-reference</a> which should not result in a backlink to itself.
 
 </p>
 
 
-	  <header><h2 class="section-title">Even <a href="//Karl-Voit.at/2016/10/31/my-temporal-article">a heading should</a> work</h2></header>
+	  <header><h2 class="section-title">Even <a href="//sonofhypnos.github.io/thoughts/2016/10/31/my-temporal-article">a heading should</a> work</h2></header>
 
 
 <p>
 
-What about <a href="//Karl-Voit.at/2016/10/31/an-hidden-blog-entry">a hidden entry</a>?
+What about <a href="//sonofhypnos.github.io/thoughts/2016/10/31/an-hidden-blog-entry">a hidden entry</a>?
 
 </p>
 
@@ -240,16 +240,16 @@ This is to test the reading length estimation algorithm with a property drawer a
 
       </div>
     </content>
-    <id>https://karl-voit.at/2017/09/30/link-test-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2017/09/30/link-test-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Sanitizing Elements</title>
-    <link href='http://Karl-Voit.at/2017/01/08/sanitizing-tests' />
+    <link href='http://sonofhypnos.github.io/thoughts/2017/01/08/sanitizing-tests' />
     <published>2017-01-08T10:58:00+01:00</published>
     <updated>2017-01-08T10:58:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/lazyblorg' term='lazyblorg' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/lazyblorg' term='lazyblorg' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 	  <div class="example_code">
@@ -308,7 +308,7 @@ An example with a non-existent ID:
 
 <p>
 
-Example link that exists: <a href="//Karl-Voit.at/2020/10/02/Heading-which-starts-with-a-list">existing link</a>
+Example link that exists: <a href="//sonofhypnos.github.io/thoughts/2020/10/02/Heading-which-starts-with-a-list">existing link</a>
 
 </p>
 
@@ -395,7 +395,7 @@ An example with a non-existent ID:
 
 <p>
 
-Example link that exists: <a href="//Karl-Voit.at/2020/10/02/Heading-which-starts-with-a-list">existing link</a>
+Example link that exists: <a href="//sonofhypnos.github.io/thoughts/2020/10/02/Heading-which-starts-with-a-list">existing link</a>
 
 </p>
 
@@ -425,15 +425,15 @@ Test case for two ampersants in an URL, causing an issue in the feed: <a href="h
 
       </div>
     </content>
-    <id>https://karl-voit.at/2017/01/08/sanitizing-tests-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2017/01/08/sanitizing-tests-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Placeholder: How to Use This Blog Efficiently</title>
-    <link href='http://Karl-Voit.at/how-to-use-this-blog' />
+    <link href='http://sonofhypnos.github.io/thoughts/how-to-use-this-blog' />
     <published>2017-01-03T12:07:00+01:00</published>
     <updated>2017-01-03T12:07:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -453,16 +453,16 @@ This is a placeholder entry in order to be able to test internal links.
 
       </div>
     </content>
-    <id>https://karl-voit.at/how-to-use-this-blog-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/how-to-use-this-blog-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Image Test and Language Tag Override</title>
-    <link href='http://Karl-Voit.at/2016/11/27/image-test' />
+    <link href='http://sonofhypnos.github.io/thoughts/2016/11/27/image-test' />
     <published>2016-11-27T15:01:00+01:00</published>
     <updated>2016-11-27T15:01:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/lazyblorg' term='lazyblorg' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:deutsch' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/lazyblorg' term='lazyblorg' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:deutsch' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -473,7 +473,7 @@ With caption, alt, centered and 560px width:
 
 
 <figure class="image-center">
-<img src="http://Karl-Voit.at/2016/11/27/image-test/http://Karl-Voit.at/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20560.jpg" alt="This is my alt text" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEheightEND" loading="lazy" />
+<img src="http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20560.jpg" alt="This is my alt text" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEheightEND" loading="lazy" />
 <figcaption>This is my caption</figcaption>
 </figure>
 
@@ -486,7 +486,7 @@ Without caption, alt, centered and 560px width:
 
 
 <figure class="image-center">
-<img src="http://Karl-Voit.at/2016/11/27/image-test/http://Karl-Voit.at/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20560.jpg" alt="This is my alt text" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEheightEND" loading="lazy" />
+<img src="http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20560.jpg" alt="This is my alt text" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEheightEND" loading="lazy" />
 </figure>
 
 
@@ -498,7 +498,7 @@ With caption, without alt, left aligned and 300px width:
 
 
 <figure class="image-left">
-<img src="http://Karl-Voit.at/2016/11/27/image-test/http://Karl-Voit.at/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20300.jpg" alt="" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEheightEND" loading="lazy" />
+<img src="http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20300.jpg" alt="" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEheightEND" loading="lazy" />
 <figcaption>This is my caption</figcaption>
 </figure>
 
@@ -511,7 +511,7 @@ With caption, alt, right alined and 300px width:
 
 
 <figure class="image-right">
-<img src="http://Karl-Voit.at/2016/11/27/image-test/http://Karl-Voit.at/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20300.jpg" alt="This is my alt text" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEheightEND" loading="lazy" />
+<img src="http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20300.jpg" alt="This is my alt text" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 300.jpg-TMPREPLACEMEheightEND" loading="lazy" />
 <figcaption>This is my caption</figcaption>
 </figure>
 
@@ -524,7 +524,7 @@ Without caption, without alt, centered and 300px width and linked-image-width se
 
 
 <figure class="image-center">
-<img src="http://Karl-Voit.at/2016/11/27/image-test/http://Karl-Voit.at/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20560.jpg" alt="" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEheightEND" loading="lazy" />
+<img src="http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit%20-%20scaled%20width%20560.jpg" alt="" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit - scaled width 560.jpg-TMPREPLACEMEheightEND" loading="lazy" />
 </figure>
 
 
@@ -536,7 +536,7 @@ Just the image without ATTR lines or caption:
 
 
 <figure class="image-center">
-<img src="http://Karl-Voit.at/2016/11/27/image-test/http://Karl-Voit.at/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit.jpg" alt="" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit.jpg-TMPREPLACEMEheightEND" loading="lazy" />
+<img src="http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/http://sonofhypnos.github.io/thoughts/2016/11/27/image-test/2017-03-11T18.29.21%20Sterne%20im%20Baum%20--%20mytag%20publicvoit.jpg" alt="" width="TMPREPLACEMEwidthSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit.jpg-TMPREPLACEMEwidthEND" height="TMPREPLACEMEheightSTART-2017-03-11T18.29.21 Sterne im Baum -- mytag publicvoit.jpg-TMPREPLACEMEheightEND" loading="lazy" />
 </figure>
 </div>
     </summary>    <content type='xhtml'>
@@ -670,16 +670,16 @@ FIXXME: not tested so far:
 
       </div>
     </content>
-    <id>https://karl-voit.at/2016/11/27/image-test-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2016/11/27/image-test-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Special Characters and Language Tag Override</title>
-    <link href='http://Karl-Voit.at/2016/11/27/special-characters' />
+    <link href='http://sonofhypnos.github.io/thoughts/2016/11/27/special-characters' />
     <published>2016-11-27T15:00:00+01:00</published>
     <updated>2016-11-27T15:00:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/lazyblorg' term='lazyblorg' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:deutsch' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/lazyblorg' term='lazyblorg' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:deutsch' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -713,16 +713,16 @@ Being curious how this is going to work out.
 
       </div>
     </content>
-    <id>https://karl-voit.at/2016/11/27/special-characters-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2016/11/27/special-characters-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Testing Misc Sanitization Issues</title>
-    <link href='http://Karl-Voit.at/2016/11/06/sanitization-examples' />
+    <link href='http://sonofhypnos.github.io/thoughts/2016/11/06/sanitization-examples' />
     <published>2016-11-06T17:40:00+01:00</published>
     <updated>2016-11-06T17:40:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/programming' term='programming' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/programming' term='programming' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 	  <div class="example_code">
@@ -781,35 +781,35 @@ Maybe <this> should not be sanitized?
 
       </div>
     </content>
-    <id>https://karl-voit.at/2016/11/06/sanitization-examples-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2016/11/06/sanitization-examples-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">A Temporal Article With Links</title>
-    <link href='http://Karl-Voit.at/2016/10/31/my-temporal-article' />
+    <link href='http://sonofhypnos.github.io/thoughts/2016/10/31/my-temporal-article' />
     <published>2016-10-31T16:40:00+01:00</published>
     <updated>2016-10-31T16:40:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/exampletag' term='exampletag' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/exampletag' term='exampletag' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
 
-<a href="//Karl-Voit.at/2016/10/31/an-hidden-blog-entry">Link to a hidden entry</a>
+<a href="//sonofhypnos.github.io/thoughts/2016/10/31/an-hidden-blog-entry">Link to a hidden entry</a>
 
 </p>
 
 
 <p>
 
-<a href="//Karl-Voit.at/persistent-entry">Link to persistent article</a>
+<a href="//sonofhypnos.github.io/thoughts/persistent-entry">Link to persistent article</a>
 
 </p>
 
 
 <p>
 
-<a href="//Karl-Voit.at/tags/exampletag">Link to tag page</a>
+<a href="//sonofhypnos.github.io/thoughts/tags/exampletag">Link to tag page</a>
 
 </p>
 
@@ -832,21 +832,21 @@ Novum possit temporibus his in. Eam ut scripserit reformidans conclusionemque. O
 	
 <p>
 
-<a href="//Karl-Voit.at/2016/10/31/an-hidden-blog-entry">Link to a hidden entry</a>
+<a href="//sonofhypnos.github.io/thoughts/2016/10/31/an-hidden-blog-entry">Link to a hidden entry</a>
 
 </p>
 
 
 <p>
 
-<a href="//Karl-Voit.at/persistent-entry">Link to persistent article</a>
+<a href="//sonofhypnos.github.io/thoughts/persistent-entry">Link to persistent article</a>
 
 </p>
 
 
 <p>
 
-<a href="//Karl-Voit.at/tags/exampletag">Link to tag page</a>
+<a href="//sonofhypnos.github.io/thoughts/tags/exampletag">Link to tag page</a>
 
 </p>
 
@@ -866,18 +866,18 @@ Novum possit temporibus his in. Eam ut scripserit reformidans conclusionemque. O
 
       </div>
     </content>
-    <id>https://karl-voit.at/2016/10/31/my-temporal-article-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2016/10/31/my-temporal-article-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">A Wonderful Persistent Blog Entry</title>
-    <link href='http://Karl-Voit.at/persistent-entry' />
+    <link href='http://sonofhypnos.github.io/thoughts/persistent-entry' />
     <published>2016-10-31T16:39:00+01:00</published>
     <updated>2016-10-31T16:39:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/lazyblorg' term='lazyblorg' />
-    <category scheme='http://Karl-Voit.at/tags/programming' term='programming' />
-    <category scheme='http://Karl-Voit.at/tags/exampletag' term='exampletag' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/lazyblorg' term='lazyblorg' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/programming' term='programming' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/exampletag' term='exampletag' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -911,15 +911,15 @@ Novum possit temporibus his in. Eam ut scripserit reformidans conclusionemque. O
 
       </div>
     </content>
-    <id>https://karl-voit.at/persistent-entry-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/persistent-entry-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">exampletag</title>
-    <link href='http://Karl-Voit.at/tags/exampletag' />
+    <link href='http://sonofhypnos.github.io/thoughts/tags/exampletag' />
     <published>2016-10-31T16:38:00+01:00</published>
     <updated>2016-10-31T16:38:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1013,15 +1013,15 @@ Below this, I expect some links to other pages related to the tag "exampletag":
 
       </div>
     </content>
-    <id>https://karl-voit.at/tags/exampletag-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/tags/exampletag-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">programming</title>
-    <link href='http://Karl-Voit.at/tags/programming' />
+    <link href='http://sonofhypnos.github.io/thoughts/tags/programming' />
     <published>2016-10-31T13:30:00+01:00</published>
     <updated>2016-10-31T13:30:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1033,7 +1033,7 @@ Here, you can read about the test-tag "programming".
 
 <p>
 
-<a href="//Karl-Voit.at/tags/programming">This link</a> should be a self-reference.
+<a href="//sonofhypnos.github.io/thoughts/tags/programming">This link</a> should be a self-reference.
 
 </p>
 
@@ -1056,7 +1056,7 @@ Here, you can read about the test-tag "programming".
 
 <p>
 
-<a href="//Karl-Voit.at/tags/programming">This link</a> should be a self-reference.
+<a href="//sonofhypnos.github.io/thoughts/tags/programming">This link</a> should be a self-reference.
 
 </p>
 
@@ -1069,16 +1069,16 @@ Glad you like it.
 
       </div>
     </content>
-    <id>https://karl-voit.at/tags/programming-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/tags/programming-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">from nothing to DONE</title>
-    <link href='http://Karl-Voit.at/2016/09/18/from-nothing-to-done' />
+    <link href='http://sonofhypnos.github.io/thoughts/2016/09/18/from-nothing-to-done' />
     <published>2016-09-18T13:19:00+01:00</published>
     <updated>2016-09-18T13:19:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/testtag1' term='testtag1' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/testtag1' term='testtag1' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1098,16 +1098,16 @@ This is an example blog entry with no special content.
 
       </div>
     </content>
-    <id>https://karl-voit.at/2016/09/18/from-nothing-to-done-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2016/09/18/from-nothing-to-done-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Placeholder: About</title>
-    <link href='http://Karl-Voit.at/about' />
+    <link href='http://sonofhypnos.github.io/thoughts/about' />
     <published>2014-03-09T14:57:00+01:00</published>
     <updated>2014-03-09T14:57:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/lazyblorg' term='lazyblorg' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/lazyblorg' term='lazyblorg' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1127,15 +1127,15 @@ This is a placeholder entry in order to be able to test internal links.
 
       </div>
     </content>
-    <id>https://karl-voit.at/about-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/about-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">Mini blog entry</title>
-    <link href='http://Karl-Voit.at/2013/08/22/testid' />
+    <link href='http://sonofhypnos.github.io/thoughts/2013/08/22/testid' />
     <published>2013-08-22T21:06:00+01:00</published>
     <updated>2013-08-22T21:06:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1155,17 +1155,17 @@ Just for testing.
 
       </div>
     </content>
-    <id>https://karl-voit.at/2013/08/22/testid-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2013/08/22/testid-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">This is an example blog entry</title>
-    <link href='http://Karl-Voit.at/2013/02/14/lazyblorg-example-entry' />
+    <link href='http://sonofhypnos.github.io/thoughts/2013/02/14/lazyblorg-example-entry' />
     <published>2013-02-14T19:02:00+01:00</published>
     <updated>2013-02-14T19:02:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/tags/mytest' term='mytest' />
-    <category scheme='http://Karl-Voit.at/tags/programming' term='programming' />
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/mytest' term='mytest' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/tags/programming' term='programming' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1256,15 +1256,15 @@ bar<br />
 
       </div>
     </content>
-    <id>https://karl-voit.at/2013/02/14/lazyblorg-example-entry-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/2013/02/14/lazyblorg-example-entry-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry14</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry14' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry14' />
     <published>1985-01-01T15:14:00+01:00</published>
     <updated>1985-01-01T15:14:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1284,15 +1284,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry14-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry14-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry13</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry13' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry13' />
     <published>1985-01-01T15:13:00+01:00</published>
     <updated>1985-01-01T15:13:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1312,15 +1312,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry13-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry13-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry12</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry12' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry12' />
     <published>1985-01-01T15:12:00+01:00</published>
     <updated>1985-01-01T15:12:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1340,15 +1340,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry12-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry12-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry11</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry11' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry11' />
     <published>1985-01-01T15:11:00+01:00</published>
     <updated>1985-01-01T15:11:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1368,15 +1368,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry11-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry11-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry10</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry10' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry10' />
     <published>1985-01-01T15:10:00+01:00</published>
     <updated>1985-01-01T15:10:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1396,15 +1396,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry10-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry10-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry9</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry9' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry9' />
     <published>1985-01-01T15:09:00+01:00</published>
     <updated>1985-01-01T15:09:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1424,15 +1424,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry9-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry9-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry8</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry8' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry8' />
     <published>1985-01-01T15:08:00+01:00</published>
     <updated>1985-01-01T15:08:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1452,15 +1452,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry8-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry8-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry7</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry7' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry7' />
     <published>1985-01-01T15:07:00+01:00</published>
     <updated>1985-01-01T15:07:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1480,15 +1480,15 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry7-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry7-from-feed-with-content</id>
 </entry>
 <!-- ############################################################################################# -->
 <entry>
     <title type="text">old blog entry6</title>
-    <link href='http://Karl-Voit.at/1985/01/01/old-entry6' />
+    <link href='http://sonofhypnos.github.io/thoughts/1985/01/01/old-entry6' />
     <published>1985-01-01T15:06:00+01:00</published>
     <updated>1985-01-01T15:06:00+01:00</updated>
-    <category scheme='http://Karl-Voit.at/autotags/language' term='language:english' />
+    <category scheme='http://sonofhypnos.github.io/thoughts/autotags/language' term='language:english' />
     <summary type='xhtml'>
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <p>
@@ -1508,5 +1508,5 @@ Test entry.
 
       </div>
     </content>
-    <id>https://karl-voit.at/1985/01/01/old-entry6-from-feed-with-content</id>
+    <id>https://sonofhypnos.github.io/thoughts/1985/01/01/old-entry6-from-feed-with-content</id>
 </entry></feed>
