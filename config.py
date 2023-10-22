@@ -52,9 +52,9 @@ NUMBER_OF_FEED_ARTICLES = 25
 # See example in: testdata/end_to_end_test/orgfiles/about-placeholder.org
 ID_OF_ABOUT_PAGE = "2014-03-09-about"
 
-# string: This is the Org-mode property :ID: of your blog article which
-#         is used for the "How to use this blog efficiently" page of your blog.
-ID_OF_HOWTO_PAGE = "2017-01-03-how-to-use-public-voit"
+## string: This is the Org-mode property :ID: of your blog article which
+##         is used for the "How to use this blog efficiently" page of your blog.
+ID_OF_HOWTO_PAGE = "2017-01-03-how-to-use-this-blog"
 
 # string: Your Twitter handle/username which is used in the HTML header
 #         metadata (without the @ character)
