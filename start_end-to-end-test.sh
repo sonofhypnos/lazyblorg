@@ -1,8 +1,11 @@
-#!/bin/sh
+#!/bin/sh -e
 
 ## this script calls each unit test script
 ## if no error is found, the final success statement is shown
 ## if error occurs, this script stops at the error
+
+## activate Python3 virtualenv:
+test ! -d venv || . ./venv/bin/activate
 
 end_to_end_test()
 {
@@ -36,7 +39,7 @@ end_to_end_test()
 
 }
 
-end_to_end_test $@ && \
+end_to_end_test "$@" && \
 echo "\n\n           End-to-end tests ended successfully! :-)\n\n"
 
 #end
