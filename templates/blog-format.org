@@ -361,11 +361,11 @@ With name/label:
 
   <header class="persistent-header">
 
-      <nav class="entrypage-article-header-nav">
-        <span class="breadcrumbs">
-          <img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"><span style="padding-top:1em;">
-        </span>
-      </nav>
+      # <nav class="entrypage-article-header-nav">
+      #   <span class="breadcrumbs">
+      #     <img src="#BLOG-LOGO#" alt="#BLOG-NAME#" width="350" style="vertical-align:middle;"><span style="padding-top:1em;">
+      #   </span>
+      # </nav>
 
   </header>
 

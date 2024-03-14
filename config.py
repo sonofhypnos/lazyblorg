@@ -25,10 +25,10 @@ BLOG_NAME = "Perfect is the enemy of sustainable"
 DOMAIN = "sonofhypnos.github.io/thoughts"
 BASE_URL = "//" + DOMAIN
 CSS_URL = BASE_URL + "/public_voit.css"
-BLOG_LOGO = ""
+BLOG_LOGO = "images/DALL·E 2023-10-22 18.36.02 - Vector Illustration_ Abstract quantum waves in blue and purple hues merging seamlessly with a green digital matrix. The fusion symbolizes the blend of.png"
 DISQUS_NAME = ""  # gets placed in: '//publicvoit.disqus.com/embed.js' ??
 # I think Disqus is for comments and I am not sure I want to use it
-MASTODON_USER_URL=None
+MASTODON_USER_URL = None
 
 # string: Email address to send comments to:
 COMMENT_EMAIL_ADDRESS = (

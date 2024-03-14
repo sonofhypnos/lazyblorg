@@ -2107,7 +2107,7 @@ class Htmlizer(object):
         content = content.replace('#CSS-URL#', config.CSS_URL)
         content = content.replace('#AUTHOR-NAME#', config.AUTHOR_NAME)
         content = content.replace('#BLOG-NAME#', config.BLOG_NAME)
-        content = content.replace('#BLOG-LOGO#', config.BLOG_LOGO)
+        # content = content.replace('#BLOG-LOGO#', config.BLOG_LOGO)
         content = content.replace('#DISQUS-NAME#', config.DISQUS_NAME)
         content = content.replace('#ABOUT-PAGE-ID#', config.ID_OF_ABOUT_PAGE)
         content = content.replace('#HOWTO-PAGE-ID#', config.ID_OF_HOWTO_PAGE)
